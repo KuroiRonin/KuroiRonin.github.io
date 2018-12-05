@@ -1,52 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head >
-	<title>Edwin Bishop</title>
-	
-	<script id = "processing" type=  "text/javascript "src = "js/processing.js">
-        </script>
-        
-    <script id = "code" type = "text/javascript"src = "js/mySketch.js"> </script>
-	
-	<link rel = "icon" href = "img/Logo.png" type= "image/x-icon">
-	
-</head>
 
-<body style = " border:0 ; margin: 0" bgcolor= "#9C2542"  > 
-
-        <div style = "height: 500px;  width:100%; margin=0 " >
-        <iframe id = "world" 
-        src="https://www.openprocessing.org/sketch/612115/"
-        style="position:center;" 
-        top:  10px;
-        left: 10px
-        bottom: 10px
-        right: 10px "
-        width = "100%"
-        height = "100%"
-        border:none;
-        margin:0;
-        padding:0;
-        allow= "microphone;">
-        </iframe> 
-        </div>
-		
-		 <form>
-        <input type="button" onclick="window.open('https://docs.google.com/document/d/1hy1aeMZuspo6MxasWpAoJyw8j_CcJocm2c8uZ_7vCTo/edit?usp=sharing') " value = "About Me"
-        style= "font-weight:bold"> 
-        </form> <br>
-        <form>
-        </form>
-	
-		<!--
-        <canvas id = "sketch" width ="window.innerWidth" height= "200" > </canvas>
-		
-		<script>
-			var sketch = document.getElementById('sketch');
-			var context=sketch.getContext("webgl");
-			
-			/ This variable is for the microphone input
-	var mic;
+window.onload= function() {
+// This variable is for the microphone input
+var mic;
 // These variables represent the colors for the lines of the sphere
 var lr;
 var lg;
@@ -128,11 +83,4 @@ function changeColorMic() {
 	lg = random(ml)+random(256);
 	lb = random(ml)+random(256);	
 }
-		</script>
-		
-       
-        
-       
- -->
-</body>
-</html>
+}
