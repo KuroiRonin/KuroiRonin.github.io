@@ -1,0 +1,16 @@
+/*
+	Comment
+*/
+
+.button { 
+  	background-color:darksalmon ; 
+	font-weight:bold;
+	text-align :center;
+}
+
+.body {
+	 border:0 ; 
+	 margin: 0;
+	 bgcolor : maroon;   
+	
+}

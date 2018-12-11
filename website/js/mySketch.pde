@@ -1,3 +1,6 @@
+import processing.sound.*;
+
+
 // This variable is for the microphone input
 var mic;
 // These variables represent the colors for the lines of the sphere
@@ -16,8 +19,8 @@ var sw;
 // This is the mic level
 var ml;
 
-function setup() {	
-	mic = new p5.AudioIn();
+ void setup() {	
+	mic =  new AudioIn(this,0);
 	mic.start();
 	createCanvas(windowWidth, windowHeight,WEBGL);
 	lr = 0;
@@ -32,7 +35,7 @@ function setup() {
 	ml= 0.00;
 }
 
-function draw() {
+void draw() {
 	
 	background(sr,sg,sb);
 	
@@ -64,19 +67,19 @@ function draw() {
 	
 }
 // Clicking the mouse changes its color and randomly sets the rotation speed and direction
-function mouseClicked() {
+  void mouseClicked() {
 	changeSphereColor();
 	rx = random(.01);
 	ry= random(.01);
 }
 
-function changeSphereColor() {
+void changeSphereColor() {
 	sr= random(256);
 	sg= random(256);
 	sb= random(256);
 	}
 
-function changeColorMic() {
+  void changeColorMic() {
 	lr = random(ml)+random(256);
 	lg = random(ml)+random(256);
 	lb = random(ml)+random(256);	
