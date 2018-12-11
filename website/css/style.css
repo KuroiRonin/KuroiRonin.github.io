@@ -3,7 +3,7 @@
 */
 
 .button { 
-  	background-color:white; 
+  	background-color:black; 
 	font-weight:bold;
 	text-align :center;
 	border: 10px ;
@@ -12,19 +12,20 @@
    transition-duration: 0.4s;
    float:left;
    margin-left: 20%;
+   color :chocolate;
 }
 
 .button:hover{
-	background-color:salmon;
+	background-color:DarkSalmon;
 	box-shadow: 0 12px 16px 0 ;
 }
 .body {
-	 border:0 ; 
-	 margin: 0;
+	 border: 5% ; 
+	 margin:5%;
 	 background-color: maroon;   
 }
 
 p{
-	line-height: 300%;
+	
 	
 }
