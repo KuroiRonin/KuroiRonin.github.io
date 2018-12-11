@@ -11,8 +11,7 @@
 	font-size:18px; 
    transition-duration: 0.4s;
    float:left;
-   position:center
-   
+   margin-left: 20%;
 }
 
 .button:hover{
