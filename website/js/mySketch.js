@@ -1,5 +1,4 @@
-
-
+var canvas;
 // This variable is for the microphone input
 //var mic;
 // These variables represent the colors for the lines of the sphere
@@ -18,9 +17,11 @@ var sw;
 // This is the mic level
 var ml;
 	
-
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
 function setup() {	
-	createCanvas(windowWidth, windowHeight, WEBGL);
+	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
 	mic = new p5.AudioIn();
 	mic.start();
 	lr = 0;
@@ -44,8 +45,7 @@ function draw() {
 	strokeWeight(sw);
 	rotateX(frameCount * rx );
 	rotateY(frameCount * ry);
-	translate(height,height)
-	sphere(height);
+	sphere(windowHeight);
 	
 	if(keyIsDown(UP_ARROW)) {
 		rx+=.0002;
