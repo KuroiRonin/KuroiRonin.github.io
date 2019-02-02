@@ -11,6 +11,7 @@
    float:left;
    margin-left: 20%;
    color :chocolate;
+   z-index: -1;
 }
 
 .button:hover{
@@ -20,4 +21,9 @@
 
 .body {
 	margin: 0%;	
+}
+
+canvas {
+	height: 100%;
+	width: 100%
 }
