@@ -1,6 +1,6 @@
 var canvas;
 // This variable is for the microphone input
-//var mic;
+var mic;
 // These variables represent the colors for the lines of the sphere
 var lr;
 var lg;
