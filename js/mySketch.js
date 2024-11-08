@@ -82,7 +82,7 @@ function changeSphereColor() {
 	}
 
 function changeColorMic() {
-	lr = random(ml)+random(256);
-	lg = random(ml)+random(256);
-	lb = random(ml)+random(256);	
+	lr = random(256);
+	lg = random(256);
+	lb = random(256);	
 }
