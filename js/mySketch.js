@@ -24,12 +24,12 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
 	mic = new p5.AudioIn();
 	mic.start();
-	lr = 0;
-	lg = 0;
-	lb = 0;
-	sr = 255;
-	sg = 255;
-	sb = 255;
+	lr = random(256);
+	lg = random(256);
+	lb = random(256);
+	sr = random(256);
+	sg = random(256);
+	sb = random(256);
 	rx= 0.01;
 	ry= 0.01;
 	sw= 25;
