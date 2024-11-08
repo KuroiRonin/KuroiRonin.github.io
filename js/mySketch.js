@@ -58,7 +58,8 @@ function draw() {
 	} else if( keyIsDown(ENTER) ) {
 			changeSphereColor();
 	}
-	ml=mic.getLevel();
+
+	
 	while(ml >=0.05) {
 		sw = random(25)+ 25;
 		changeColorMic();
