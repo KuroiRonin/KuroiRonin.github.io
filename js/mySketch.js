@@ -60,7 +60,7 @@ function draw() {
 	}
 
 	
-	while(ml >=0.10) {
+	while(ml >=0.15) {
 		sw = random(25)+ 25;
 		changeColorMic();
 		break;
