@@ -41,7 +41,7 @@ function draw() {
 	background(sr,sg,sb);
 	
 	fill(sr,sg,sb);
-	stroke(sr,sg,sb);
+	stroke(lr,lg,lb);
 	strokeWeight(sw);
 	rotateX(frameCount * rx );
 	rotateY(frameCount * ry);
