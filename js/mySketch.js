@@ -40,7 +40,7 @@ function draw() {
 	
 	background(sr,sg,sb);
 	
-	// fill(sr,sg,sb);
+	fill(sr,sg,sb);
 	stroke(lr,lg,lb);
 	strokeWeight(sw);
 	rotateX(frameCount * rx );
@@ -60,7 +60,7 @@ function draw() {
 	}
 
 	
-	while(ml >=0.15) {
+	while(ml >=0.2) {
 		sw = random(25)+ 25;
 		changeColorMic();
 		break;
