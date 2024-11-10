@@ -63,8 +63,8 @@ function draw() {
 	while(ml >=0.01) {
 		sw = random(25)+ 25;
 		changeColorMic();
+		break;
 	}
-		ml=mic.amp();
 	
 }
 // Clicking the mouse changes its color and randomly sets the rotation speed and direction
