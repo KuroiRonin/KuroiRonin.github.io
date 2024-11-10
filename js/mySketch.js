@@ -60,10 +60,9 @@ function draw() {
 	}
 
 	
-	if(ml >=0.01) {
+	while(ml >=0.01) {
 		sw = random(25)+ 25;
 		changeColorMic();
-		break;
 	}
 		ml=mic.amp();
 	
