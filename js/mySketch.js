@@ -39,7 +39,8 @@ function setup() {
 function draw() {
 	
 	background(sr,sg,sb);
-	
+	// Enables orbiting of sphere with the mouse.
+  	orbitControl();
 	fill(sr,sg,sb);
 	stroke(lr,lg,lb);
 	strokeWeight(sw);
