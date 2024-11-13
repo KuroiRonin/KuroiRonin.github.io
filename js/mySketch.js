@@ -33,7 +33,7 @@ function setup() {
 	rx= 0.01;
 	ry= 0.01;
 	sw= 25;
-	ml= mic.amp();
+	ml= mic.getLevel();
 	console.log(ml); 
 }
 
@@ -68,7 +68,7 @@ function draw() {
 		break;
 	}
 
-	ml= mic.amp();
+	ml= mic.getLevel();
 	
 }
 // Clicking the mouse changes its color and randomly sets the rotation speed and direction
