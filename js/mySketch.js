@@ -48,7 +48,8 @@ function draw() {
 	rotateX(frameCount * rx );
 	rotateY(frameCount * ry);
 	sphere(windowHeight);
-	
+
+	ml= mic.getLevel();
 	if(keyIsDown(UP_ARROW)) {
 		rx+=.0002;
 	} else if(keyIsDown(DOWN_ARROW)) {
@@ -59,14 +60,12 @@ function draw() {
 		ry+=.0002;
 	} else if( keyIsDown(ENTER) ) {
 			changeSphereColor();
-	} 
-	
-	while (ml >=0.15) {
+	} else if (ml >=0.15) {
 		sw = random(25)+ 25;
 		changeColorMic();
 	}
-
-	ml= mic.getLevel();
+	console.log(ml);
+	
 	
 }
 // Clicking the mouse changes its color and randomly sets the rotation speed and direction
