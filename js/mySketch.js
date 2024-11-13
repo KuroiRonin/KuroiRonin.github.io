@@ -34,6 +34,7 @@ function setup() {
 	ry= 0.01;
 	sw= 25;
 	ml= mic.amp();
+	console.log(ml); 
 }
 
 function draw() {
