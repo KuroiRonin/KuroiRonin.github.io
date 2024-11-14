@@ -72,7 +72,13 @@
   else
     factory(root['p5']);
 }(this, function (p5) {
-  
+
+  document.addEventListener('click', function() {
+  if (audioContext.state === 'suspended') {
+    audioContext.resume();
+  }
+});
+
 var shims;
 'use strict';  /**
                 * This module has shims
@@ -90,6 +96,15 @@ shims = function () {
      See the License for the specific language governing permissions and
      limitations under the License.
   */
+
+  const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+document.addEventListener('click', function() {
+  if (audioContext.state === 'suspended') {
+    audioContext.resume();
+  }
+});
+
   (function () {
     function fixSetTarget(param) {
       if (!param)
