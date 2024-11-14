@@ -60,7 +60,9 @@ function draw() {
 		ry+=.0002;
 	} else if( keyIsDown(ENTER) ) {
 			changeSphereColor();
-	} else if (ml >=0.15) {
+	} 
+	
+	while (ml >=0.15) {
 		sw = random(25)+ 25;
 		changeColorMic();
 	}
