@@ -36,22 +36,6 @@ function setup() {
 	ml= mic.getLevel();
 	console.log(ml); 
 	
-	document.addEventListener('click', function() {
-  if (audioContext.state === 'suspended') {
-    audioContext.resume();
-  }
-});
-
-	const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-	
-document.addEventListener('click', function() {
-  if (audioContext.state === 'suspended') {
-    audioContext.resume();
-  }
-});
-
-
-
 	
 
 }
