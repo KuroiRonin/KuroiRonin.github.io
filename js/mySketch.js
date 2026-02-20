@@ -23,6 +23,7 @@ function windowResized() {
 function setup() {	
 	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
 	mic = new p5.AudioIn();
+	userStartAudio();
 	mic.start();
 	lr = random(256);
 	lg = random(256);
