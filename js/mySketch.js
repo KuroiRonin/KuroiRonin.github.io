@@ -74,7 +74,7 @@ function draw() {
 	
 	if (ml >=0.9) {
 		sw = random(25)+ 25;
-		changeColorMic();
+		//changeColorMic();
 	}
 	console.log(ml);
 	
