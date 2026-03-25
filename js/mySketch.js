@@ -70,12 +70,12 @@ function draw() {
 			changeSphereColor();
 	} 
 	
-	if (ml.toFixed(6) >=0.000014) {
+	if (ml >=0.014) {
 		sw = random(25)+ 25;
 		changeColorMic();
 	}
 
-	console.log(ml.toFixed(6));
+	console.log(ml);
 	
 	
 	
