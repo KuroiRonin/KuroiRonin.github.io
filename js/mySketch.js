@@ -16,13 +16,14 @@ var ry;
 var sw;
 // This is the mic level
 var ml;
-	
+var audioStarted = false;	
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 }
 function setup() {	
 	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
 	mic = new p5.AudioIn();
+	
 	userStartAudio();
 	mic.start();
 	lr = random(256);
@@ -36,8 +37,7 @@ function setup() {
 	sw= 25;
 	ml= mic.getLevel();
 	console.log(ml); 
-	
-	
+	getAudioContext().suspend();
 
 }
 
@@ -52,6 +52,12 @@ function draw() {
 	rotateX(frameCount * rx );
 	rotateY(frameCount * ry);
 	sphere(windowHeight);
+
+	// This is meant to see if the webpage has the user's audio is being used
+	if (!audioStarted) {
+    getAudioContext().resume();
+    audioStarted = true;
+  }
 
 	ml= mic.getLevel();
 	if(keyIsDown(UP_ARROW)) {
