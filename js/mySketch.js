@@ -23,7 +23,6 @@ function windowResized() {
 function setup() {	
 	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
 	mic = new p5.AudioIn();
-	
 	userStartAudio();
 	mic.start();
 	lr = random(256);
@@ -35,8 +34,7 @@ function setup() {
 	rx= 0.01;
 	ry= 0.01;
 	sw= 25;
-	ml= mic.getLevel();
-	console.log(ml); 
+	ml= mic.getLevel(); 
 	getAudioContext().suspend();
 
 }
@@ -72,7 +70,7 @@ function draw() {
 			changeSphereColor();
 	} 
 	
-	if (ml >=0.9) {
+	while (ml >=0.9) {
 		sw = random(25)+ 25;
 		//changeColorMic();
 	}
