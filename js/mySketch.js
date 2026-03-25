@@ -66,7 +66,7 @@ function draw() {
 			changeSphereColor();
 	} 
 	
-	while (ml >=0.0000015) {
+	while (ml >=0.015) {
 		sw = random(25)+ 25;
 		changeColorMic();
 	}
