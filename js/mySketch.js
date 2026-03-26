@@ -70,7 +70,7 @@ function draw() {
 			changeSphereColor();
 	} 
 	
-	if (ml >=0.00006 && ml <= 0.00007) {
+	if (ml >=0.6 && ml <= 0.9) {
 		sw = random(25)+ 25;
 		changeColorMic();
 	}
