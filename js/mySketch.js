@@ -23,7 +23,6 @@ function windowResized() {
 function setup() {	
 	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
 	mic = new p5.AudioIn();
-	userStartAudio();
 	mic.start();
 	lr = random(256);
 	lg = random(256);
@@ -82,6 +81,7 @@ function draw() {
 }
 // Clicking the mouse changes its color and randomly sets the rotation speed and direction
 function mouseClicked() {
+	userStartAudio();
 	changeSphereColor();
 	rx = random(.01);
 	ry= random(.01);
